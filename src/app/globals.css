@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --forest: #2e5d34;
+  --forest-deep: #1f4727;
+  --terracotta: #c97a3e;
+  --sage: #b7d1b0;
+  --cream: #faf8f3;
+  --paper: #fffefa;
+  --ink: #2a2a2a;
+  --muted: #8a8174;
+  --line: #ddd8ce;
+  --danger: #9b3a32;
+}
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif; font-weight: 400; text-rendering: optimizeLegibility; }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { text-underline-offset: 3px; }
+.display-type { font-family: var(--font-manrope), Manrope, ui-sans-serif, system-ui, sans-serif; font-weight: 650; letter-spacing: -0.025em; }
+.eyebrow { color: var(--terracotta); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+.panel { border: 1px solid var(--line); border-radius: 5px; background: var(--paper); }
+.field-label { display: block; margin-bottom: 0.45rem; color: #514b43; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em; }
+.input { width: 100%; min-height: 44px; border: 1px solid #c9c2b5; border-radius: 4px; background: #fff; padding: 0.65rem 0.75rem; color: var(--ink); outline: none; transition: border-color 120ms ease, box-shadow 120ms ease; }
+.input:hover:not(:disabled) { border-color: #a89f91; }
+.input:focus { border-color: var(--forest); box-shadow: 0 0 0 3px rgb(46 93 52 / 11%); }
+.input:disabled { background: #f1eee7; color: var(--muted); }
+.button { display: inline-flex; min-height: 42px; align-items: center; justify-content: center; border: 1px solid transparent; border-radius: 4px; padding: 0.58rem 1rem; font-size: 0.85rem; font-weight: 600; line-height: 1.2; cursor: pointer; transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease; }
+.button:disabled { cursor: not-allowed; opacity: 0.5; }
+.button-primary { background: var(--forest); color: #fff; }
+.button-primary:hover:not(:disabled) { background: var(--forest-deep); }
+.button-secondary { border-color: #c9c2b5; background: transparent; color: var(--ink); }
+.button-secondary:hover:not(:disabled) { border-color: var(--forest); color: var(--forest); }
+.button-danger { border-color: #d7b0aa; background: transparent; color: var(--danger); }
+.text-action { color: var(--forest); font-size: 0.84rem; font-weight: 720; }
+.text-action:hover { text-decoration: underline; }
+.state-block { border-top: 2px solid var(--sage); border-bottom: 1px solid var(--line); padding: 2.5rem 0.25rem; }
+.notice { border-left: 3px solid var(--forest); background: #eef4ec; padding: 0.9rem 1rem; color: #28502e; font-size: 0.84rem; }
+.notice-error { border-left-color: var(--danger); background: #fff3f1; color: #812d27; }
+.status-label { display: inline-flex; align-items: center; gap: 0.45rem; color: #554f47; font-size: 0.76rem; font-weight: 690; white-space: nowrap; }
+.status-label::before { width: 0.48rem; height: 0.48rem; border-radius: 999px; background: #9b9388; content: ""; }
+.status-positive::before { background: var(--forest); }
+.status-warning::before { background: var(--terracotta); }
+.status-negative::before { background: var(--danger); }
+.table-wrap { overflow-x: auto; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+.data-table th { border-bottom: 1px solid #c9c2b5; background: #f4f0e8; padding: 0.78rem 0.95rem; color: #6b6258; font-size: 0.66rem; font-weight: 760; letter-spacing: 0.075em; text-align: left; text-transform: uppercase; white-space: nowrap; }
+.data-table td { border-bottom: 1px solid #ebe7de; padding: 0.9rem 0.95rem; vertical-align: middle; }
+.data-table tbody tr:last-child td { border-bottom: 0; }
+.data-table tbody tr:hover { background: #fbf8f1; }
+.catalogue-row { border-bottom: 1px solid var(--line); transition: background-color 120ms ease; }
+.catalogue-row:hover { background: #f7f3eb; }
+
+@media (max-width: 720px) {
+  .data-table th, .data-table td { padding: 0.72rem; }
+}

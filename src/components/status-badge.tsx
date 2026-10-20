@@ -1,0 +1,3 @@
+import { humanizeStatus } from "@/lib/format";
+const positive = new Set(["ACTIVE", "CONFIRMED", "PAID", "DELIVERED", "COMPLETED"]); const warning = new Set(["PENDING", "SUBMITTED", "PAYMENT_SUBMITTED", "AWAITING_PAYMENT", "PROCUREMENT_IN_PROGRESS", "OUT_FOR_DELIVERY", "REFUND_PENDING"]); const negative = new Set(["INACTIVE", "REJECTED", "FAILED", "CANCELLED"]);
+export function StatusBadge({ status }: { status: string }) { const style = positive.has(status) ? "status-positive" : warning.has(status) ? "status-warning" : negative.has(status) ? "status-negative" : ""; return <span className={`status-label ${style}`}>{humanizeStatus(status)}</span>; }

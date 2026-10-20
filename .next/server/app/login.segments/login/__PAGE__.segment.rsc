@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+2:"$Sreact.suspense"
+3:I[8284,["520","static/chunks/app/login/page-153c4df81120e8ad.js"],"LoginForm"]
+4:I[484,[],"OutletBoundary"]
+8:I[484,[],"ViewportBoundary"]
+9:I[484,[],"MetadataBoundary"]
+b:I[7121,[],""]
+c:I[4581,[],""]
+:HL["/_next/static/css/4acd9620418d9457.css","style"]
+7:X
+e:X
+e:C
+0:{"buildId":"WDpqzUogUfOaOMuyvHHuh","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-[#faf8f3]","children":["$","div",null,{"className":"mx-auto grid min-h-screen max-w-[1280px] items-center gap-12 px-5 py-12 lg:grid-cols-[minmax(0,1fr)_440px] lg:px-10","children":[["$","section",null,{"className":"max-w-2xl","children":[["$","div",null,{"className":"display-type text-3xl text-[#2e5d34]","children":"Ikore"}],["$","div",null,{"className":"mt-14 h-0.5 w-14 bg-[#c97a3e]"}],["$","h1",null,{"className":"display-type mt-7 text-[2.75rem] leading-[1.08] sm:text-[3.6rem]","children":"Procurement that keeps your business moving."}],["$","p",null,{"className":"mt-6 max-w-xl text-base leading-7 text-[#756d63]","children":"Order from your available catalogue, follow payment and procurement, and know exactly where every delivery stands."}]]}],["$","section",null,{"className":"border-t-2 border-[#2e5d34] bg-[#fffefa] p-6 sm:p-9","children":[["$","div",null,{"className":"eyebrow mb-3","children":"Client access"}],["$","h2",null,{"className":"display-type text-3xl","children":"Sign in"}],["$","p",null,{"className":"mt-2 text-sm leading-6 text-[#756d63]","children":"Use the account provided for your organisation."}],["$","$2",null,{"children":["$","$L3",null,{}]}]]}]]}]}],null,["$","$L4",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$2",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Ikore Procurement"}],["$","meta","1",{"name":"description","content":"Client procurement and order management."}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@a","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"isPartial":"$@d","staleTime":"$7","varyParams":"$e"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4acd9620418d9457.css","precedence":"next"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_f0ece6 __variable_6e479a antialiased","children":["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]]}],"isPartial":"$@f","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@10","rootVaryParams":null,"needsRuntimeRequest":"$@11"}
+5:null
+7:300
+11:true
+7:C
+10:0
+a:"$undefined"
+d:"$undefined"
+f:"$undefined"
+6:"$undefined"

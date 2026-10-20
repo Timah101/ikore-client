@@ -1,0 +1,4 @@
+export const AUTH_COOKIE_NAME = "ikore_client_access_token";
+export type ClientSession = { email: string; role: "CLIENT"; clientId: number; expiresAt: number };
+type JwtPayload = { email?: string; role?: string; client_id?: number; exp?: number };
+export function readClientSession(token: string): ClientSession | null { try { const part = token.split(".")[1]; if (!part) return null; const normalized = part.replaceAll("-", "+").replaceAll("_", "/"); const payload = JSON.parse(atob(normalized.padEnd(Math.ceil(normalized.length / 4) * 4, "="))) as JwtPayload; if (payload.role !== "CLIENT" || !payload.email || !payload.client_id || !payload.exp || payload.exp <= Math.floor(Date.now() / 1000)) return null; return { email: payload.email, role: "CLIENT", clientId: payload.client_id, expiresAt: payload.exp }; } catch { return null; } }

@@ -1,0 +1,11 @@
+{
+  "/(protected)/dashboard/page": "app/(protected)/dashboard/page.js",
+  "/(protected)/history/page": "app/(protected)/history/page.js",
+  "/(protected)/orders/page": "app/(protected)/orders/page.js",
+  "/(protected)/procure/page": "app/(protected)/procure/page.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/logout/route": "app/api/auth/logout/route.js",
+  "/api/client/[...path]/route": "app/api/client/[...path]/route.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js"
+}

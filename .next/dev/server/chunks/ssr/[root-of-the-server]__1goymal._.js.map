@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/timah/WORK/ikore/coding/ikore/client/src/app/page.tsx"],"sourcesContent":["import { redirect } from \"next/navigation\";\n\nexport default function Home() { redirect(\"/dashboard\"); }\n"],"names":["Home"],"mappings":";;;;AAAA;AAAA;;AAEe,SAASA;IAAS,IAAA,iMAAQ,EAAC;AAAe"}}]
+}

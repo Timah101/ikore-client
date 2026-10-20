@@ -1,0 +1,14 @@
+export type ApiError = { code: string; message: string; errors?: Record<string, string> };
+export type PageResponse<T> = { content: T[]; page: number; size: number; totalElements: number; totalPages: number };
+export type ClientProfile = { id: number; businessName: string; logoUrl?: string | null; contactName?: string | null; email?: string | null; phone?: string | null; businessAddress?: string | null; deliveryAddress?: string | null; businessType?: string | null; status: "ACTIVE" | "INACTIVE" };
+export type CatalogueCategory = { id: number; name: string; description?: string | null };
+export type CatalogueItem = { id: number; categoryId: number; categoryName: string; name: string; description?: string | null; unit: string; price: number };
+export type OrderStatus = "NEW" | "AWAITING_PAYMENT" | "PAYMENT_SUBMITTED" | "PAID" | "PROCUREMENT_IN_PROGRESS" | "OUT_FOR_DELIVERY" | "DELIVERED" | "COMPLETED" | "CANCELLED" | "REFUND_PENDING";
+export type PaymentStatus = "PENDING" | "SUBMITTED" | "CONFIRMED" | "REJECTED" | "REFUND_PENDING" | "REFUNDED";
+export type DeliveryStatus = "PENDING" | "SCHEDULED" | "OUT_FOR_DELIVERY" | "DELIVERED" | "FAILED" | "CANCELLED";
+export type OrderSummary = { reference: string; status: OrderStatus; totalAmount: number; deliveryAddress: string; createdAt?: string | null; updatedAt?: string | null };
+export type OrderItem = { itemId: number; itemName: string; unit: string; quantity: number; unitPrice: number; totalPrice: number };
+export type Payment = { amount: number; method: "BANK_TRANSFER"; status: PaymentStatus; transferReference?: string | null; paymentNote?: string | null; proofUrl?: string | null; submittedAt?: string | null; confirmedAt?: string | null };
+export type Delivery = { deliveryAddress: string; status: DeliveryStatus; scheduledDate?: string | null; deliveredAt?: string | null; notes?: string | null };
+export type OrderDetail = { reference: string; status: OrderStatus; totalAmount: number; deliveryAddress: string; notes?: string | null; items: OrderItem[]; payment: Payment; delivery: Delivery; createdAt?: string | null; updatedAt?: string | null };
+export type BankDetails = { bankName: string; accountName: string; accountNumber: string };

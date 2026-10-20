@@ -1,0 +1,11 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/src/app/(protected)/orders/page": [
+      "static/media/inter_latin-s.p.2bn3s6zvc0dyp.woff2",
+      "static/media/manrope_latin-s.p.1sj6eobyi31rd.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}
